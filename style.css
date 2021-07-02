@@ -91,8 +91,11 @@ nav{
 }
 
 a:hover{
-    color: turquoise;
-    font-size: larger;
+    color: rgb(99, 70, 72);
+    
+}
+.menu i{
+    margin-right: 5px;
 }
 
                                              /* main content */
@@ -121,6 +124,7 @@ h1{
 
 .content p{
    font-size: 1.3em; 
+   margin-left: 5em;
     
 }
 
@@ -134,7 +138,7 @@ span{
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 40% 1fr;
-    grid-template-rows: repeat(4 , 1fr);
+    grid-template-rows: repeat(4 , 100px);
 
     grid-template-areas: 
     "box1 img box4"
@@ -191,7 +195,7 @@ span{
     display: block;
     text-align: center;
     grid-area: hover;
-    text-shadow: blue 15px 40px 5px ;
+    text-shadow: blue 15px -60px 5px ;
 }
 
 
