@@ -50,7 +50,11 @@
     }
 }
 
-
+@keyframes rotz {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
 
 .rotx{
     
@@ -247,6 +251,10 @@ span{
     margin-top: .5em;
     font-size: 1.5em;
 
+}
+.progress i:first-child{
+    margin-right: 5px;
+    animation: rotz 4s linear infinite;
 }
                      /* 3rd section */
 .future {
