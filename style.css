@@ -9,7 +9,9 @@
     margin: 0;
     /* padding: 0; */
 }
-
+body {
+    background-color: rgb(177, 166, 166);
+}
 
 
 
@@ -104,7 +106,7 @@ a:hover{
 
                                              /* main content */
 main {
-    max-width: 1060px;
+    max-width: 1160px;
     margin: auto;
  }
 
@@ -116,9 +118,7 @@ main {
 
  }
 
-#about{
-    padding: 2em;
-}   
+ 
 nav svg {
     position: absolute;
     top: 3em;
@@ -171,40 +171,44 @@ span{
     width: 20vw;
     text-align: center;
     border: 1px solid #000;
-    
+    box-shadow: 10px 10px 10px slategrey;
+    padding:5px;
     grid-area: img;   
     
 }
 .grid-box{
-    width: 15vw;
-    border: 1px  solid;
+    min-width: 70px;
+    min-height: 70px;
+    background-color: #ccc;
+    /* width: 15vw; */
+    /* border: 1px  solid; */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 5px ;
-    border-radius: 50%;
+    border-radius: 20px;
     font-size: 20px;
 }
-.box1, .box2, .box3 {
+/* .box1, .box2, .box3 {
     transform: rotateZ(45deg);
 }
 .box4, .box5, .box6 {
     transform: rotateZ(-45deg);
-}
+} */
 
 .hover{
     display: none;
     font-size: 4em;
-    color: slateblue;
+    /* color: slateblue; */
 }
 .box1:hover, .box2:hover, .box3:hover {
     box-shadow: none;
-    transform: rotateZ(45deg) ;
+    /* transform: rotateZ(45deg) ; */
     cursor: help;
 }
 
 .box4:hover, .box5:hover, .box6:hover {
-    transform: rotateZ(-45deg) ;
+    /* transform: rotateZ(-45deg) ; */
     box-shadow: none;
     cursor: help;
 }
@@ -212,7 +216,7 @@ span{
     display: block;
     text-align: center;
     grid-area: hover;
-    text-shadow: blue 15px -60px 5px ;
+    text-shadow:  15px -60px 5px ;
 }
 
 
@@ -247,11 +251,11 @@ span{
 
 #career{
     
-    background-image: url(./src/image/setting-gears.png);
+    background-image: url(./src/image/undraw_thought_process_re_om58.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 80%;
-    width: 80%;
+    /* width: 80%; */
     margin:5em auto;
     padding-bottom: 10em;
 
@@ -271,7 +275,7 @@ span{
 }
                      /* 3rd section */
 .future {
-    padding: 5em;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -319,6 +323,11 @@ span{
     background-color: #ccc;
     padding-left: 5vw;
 }
+.media h3 {
+    /* font-family: 'Lovers Quarrel', cursive; */
+    font-size: 3em;
+    
+}
 
 footer ul {
     display: flex;
@@ -328,4 +337,28 @@ footer ul {
 footer li{
     list-style: none;
     margin: 5vw;
+}
+.rights {
+    text-align:right;
+}
+
+
+
+/*  media query */
+
+@media  (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:500px){
+    .content {
+        width: 100%;
+    }
+    .developer {
+        display: none;
+    }
+    
 }
