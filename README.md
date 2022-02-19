@@ -1,1 +1,3 @@
 # Portfolio
+
+Creating my personal portfolio to add to it my projects and keep record of my progress ...
