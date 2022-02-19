@@ -148,7 +148,7 @@ span{
 
 #resume{
     position: relative;
-    margin: 6vw 0 13vw;
+    margin: 6vw 0 18vw;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 40% 1fr;
@@ -158,7 +158,7 @@ span{
     "box1 note box4"
     "box2 img box5"
     "box3 img box6"
-    " hover hover hover";
+    " . img .";
 }
               
 .note{
@@ -203,7 +203,7 @@ span{
 }
 .grid-box:hover+img {
     display: inline-block;
-    grid-area: hover;
+    grid-area: img;
     max-width: 400px;
     max-height: 300px;
     
