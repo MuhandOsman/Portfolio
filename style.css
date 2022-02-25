@@ -97,7 +97,7 @@ nav{
 }
 
 a:hover{
-    color: rgb(99, 70, 72);    
+    color: rgb(128, 26, 23);    
 }
 .menu i{
     margin-right: 5px;
@@ -161,6 +161,7 @@ span{
               
 .note{
     width: 20vw;
+    min-width: 166px;
     text-align: center;
     border: 1px solid #000;
     border-radius: 5px;
@@ -276,7 +277,7 @@ span{
 .art{
     min-width: 10em;
     max-width:20vw;
-    margin: 5em 1em;
+    margin: 2em 1em;
     padding: 2em;
     /* transition: 1s; */
 
@@ -337,8 +338,10 @@ footer li{
 @media  (max-width: 800px) {
     .menu {
         flex-direction: column;
-    }
-    
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }   
 }
 
 @media (max-width:600px){
